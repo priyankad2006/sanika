@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo"> </p>
+<script>
+function Person(fname,lname)
+{ 
+ this.fname=fname;
+ this.lname=lname;
+}
+Person.prototype.name=function()
+{
+ return this.fname + " " + this.lname;
+}
+const p = new Person("john","thomas");
+document.getElementById("demo").innerHTML = p.name();
+</script>
+</body>
+</html>
